@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.light .upper-div {
+  @apply bg-slate-100;
+  /* background-color: #e2e8f0; */
+}
+
+.dark .upper-div {
+  /* background-color: #1a202c; */
+  @apply bg-slate-900;
+}
+
+.light .lower-div {
+  /* background-color: #1a202c; */
+  @apply bg-slate-900;
+}
+
+.dark .lower-div {
+  /* background-color: #e2e8f0; */
+  @apply bg-slate-100;
+}
+
+.light .text-content {
+  /* color: #000000; */
+  @apply text-slate-900;
+}
+
+.dark .text-content {
+  /* color: #ffffff; */
+  @apply text-slate-100;
+}
+
+.dark .heading {
+  /* color: #000000; */
+  @apply text-slate-900;
+}
+
+.light .heading {
+  /* color: #ffffff; */
+  @apply text-slate-100;
+}
+
+.dark .shadow-custom {
+  box-shadow: rgba(246, 244, 244, 0.453) 0px 2px 8px 0px;
+}
+
+.light .shadow-custom {
+  @apply shadow-md;
+}
